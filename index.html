@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <nav>
+        <div class="logo">
+            <i class="fas fa-code"></i> K. Shankar
+        </div>
+
+        <ul>
+            <li onclick="openPage('about')">About</li>
+            <li onclick="openPage('education')">Education</li>
+            <li onclick="openPage('skills')">Skills</li>
+            <li onclick="openPage('projects')">Projects</li>
+            <li onclick="openPage('achievements')">Achievements</li>
+            <li onclick="openPage('contact')">Contact</li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+
+        <div class="glow"></div>
+
+        <h4>HELLO, I AM</h4>
+
+        <h1>K. Shankar</h1>
+
+        <h2>MCA Student | Aspiring Software Developer</h2>
+
+        <p>
+            Driven to build impactful software and
+            create modern web applications.
+        </p>
+
+        <div class="btns">
+            <button onclick="openPage('projects')">
+                View My Work
+            </button>
+
+            <button>
+                <a href="resume.pdf" download class="resume-btn">
+    Download Resume
+</a>
+            </button>
+
+            
+        </div>
+
+    </section>
+
+</div>
+
+<!-- ABOUT -->
+
+<div class="panel" id="about">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>About Me</h1>
+
+    <div class="about-grid">
+
+        <div class="about-left">
+
+            <div class="about-card">
+
+                <h2>Who I Am</h2>
+
+                <p>
+                    I'm an MCA student and aspiring Software Developer
+                    passionate about creating modern web applications,
+                    solving real-world problems, and continuously learning
+                    emerging technologies.
+                </p>
+
+                <p>
+                    My focus is on full-stack development, software design,
+                    and building user-friendly digital experiences.
+                </p>
+
+            </div>
+
+            <div class="about-card">
+
+                <h2>My Mission</h2>
+
+                <p>
+                    To transform innovative ideas into impactful software
+                    solutions while constantly improving my technical and
+                    problem-solving skills.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="about-right">
+
+            <div class="stat-card">
+                <h3>10+</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>5+</h3>
+                <p>Technologies Learned</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>3+</h3>
+                <p>Certifications</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Dedication</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- EDUCATION -->
+<div class="panel" id="education">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>Education Journey</h1>
+
+    <div class="timeline">
+      <div class="edu-box">
+    <div class="edu-icon">
+        <i class="fas fa-graduation-cap"></i>
+    </div>
+
+    <div class="edu-content">
+        <span class="year">2025 - Present</span>
+
+        <h2>Master of Computer Applications (MCA)</h2>
+
+        <h4>St.Philomena(Autonomous)College,Puttur</h4>
+
+        <p>
+            Currently pursuing MCA with focus on
+            Software Development, Web Technologies,
+            Database Management Systems, and Modern
+            Programming Practices.
+        </p>
+
+        <span class="status-badge">
+            Currently Pursuing
+        </span>
+
+    </div>
+</div>
+       
+
+        <div class="edu-box">
+            <div class="edu-icon">
+                <i class="fas fa-university"></i>
+            </div>
+
+            <div class="edu-content">
+                <span class="year">2023 - 2025</span>
+                <h2>Bachelor of Computer Applications (BCA)</h2>
+                <h4>Sri Satishchandra Agarwal Government First Grade(Autonomous)College,Ballari</h4>
+
+                <p>
+                    Built a strong foundation in Programming,
+                    Data Structures, Databases, Networking,
+                    and Software Engineering.
+                </p>
+                <span class="status-badge completed">
+    Completed
+</span>
+            </div>
+        </div>
+
+        <div class="edu-box">
+            <div class="edu-icon">
+                <i class="fas fa-school"></i>
+            </div>
+
+            <div class="edu-content">
+                <span class="year">2019 - 2021</span>
+                <h2>Higher Secondary Education</h2>
+                <h4>Morarji Desai Residential College,Devadurga</h4>
+
+                <p>
+                    Completed Pre-University education with
+                    focus on Mathematics and Computer Science.
+                </p>
+                <span class="status-badge completed">
+    Completed
+</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Skills -->
+<div class="panel" id="skills">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>Technical Arsenal</h1>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="progress">
+                <div class="bar html">95%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="progress">
+                <div class="bar css">90%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="progress">
+                <div class="bar js">85%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+            <div class="progress">
+                <div class="bar java">80%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <div class="progress">
+                <div class="bar python">88%</div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-database"></i>
+            <h3>MySQL</h3>
+            <div class="progress">
+                <div class="bar mysql">82%</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- PROJECTS -->
+
+<div class="panel" id="projects">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>Featured Projects</h1>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+
+            <h2>Student Result Management System</h2>
+            <div class="project-type">
+    Web Application
+</div>
+
+            <p>
+                A web application for managing student records,
+                marks, and result generation efficiently.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+            </div>
+          
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-wallet"></i>
+            </div>
+
+            <h2>Expense Tracker</h2>
+            <div class="project-type">
+    Desktop Application
+</div>
+
+            <p>
+                Track daily expenses and income with
+                easy-to-read summaries and reports.
+            </p>
+
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>MySQL</span>
+            </div>
+            
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <h2>Personal Portfolio</h2>
+            <div class="project-type">
+    Personal Project
+</div>
+
+            <p>
+                Modern responsive portfolio website
+                showcasing skills, projects and achievements.
+            </p>
+
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+           
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div class="panel" id="achievements">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>Achievements & Certifications</h1>
+
+    <div class="achievement-grid">
+
+        <div class="achievement-card">
+
+            <div class="achievement-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+
+            <h2>Python Programming</h2>
+
+            <div class="achievement-type">
+                Certification
+            </div>
+
+            <p>
+                Successfully completed Python Programming
+                certification covering fundamentals and OOP concepts.
+            </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="achievement-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <h2>Web Development</h2>
+
+            <div class="achievement-type">
+                Certification
+            </div>
+
+            <p>
+                Learned HTML, CSS, JavaScript and responsive
+                website development.
+            </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+
+            <h2>Hackathon Participant</h2>
+
+            <div class="achievement-type">
+                Achievement
+            </div>
+
+            <p>
+                Participated in technical events and collaborative
+                software development challenges.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="panel" id="contact">
+
+    <span class="close" onclick="closePage()">×</span>
+
+    <h1>Get In Touch</h1>
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>k2538225@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 XXXXX XXXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>Location</h3>
+                    <p>Karnataka, India</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Message">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button>Send Message</button>
+
+        </div>
+
+    </div>
+<div class="social-links">
+
+    <a href="https://github.com/search?q=Profile%20link&type=repositories" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/shankar-k-36407439b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/k_shankar_18?igsh=am82bDl4enA3NTlr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</div>
+</div>
+
+<script src="scripts.js"></script>
+<footer>
+    © 2025 K. Shankar. All Rights Reserved.
+</footer>
+</body>
+</html>
